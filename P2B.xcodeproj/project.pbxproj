@@ -13,6 +13,11 @@
 		CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22EC2459FF18000CE6F9 /* Assets.xcassets */; };
 		CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22EF2459FF18000CE6F9 /* Preview Assets.xcassets */; };
 		CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22F12459FF18000CE6F9 /* LaunchScreen.storyboard */; };
+		CA1C22FE245A0053000CE6F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22FC245A0053000CE6F9 /* Main.storyboard */; };
+		CA1C2300245A0094000CE6F9 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C22FF245A0094000CE6F9 /* VisionObjectRecognitionViewController.swift */; };
+		CA1C2302245A009D000CE6F9 /* ObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CA1C2301245A009D000CE6F9 /* ObjectDetector.mlmodel */; };
+		CA1C2306245A0109000CE6F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C2305245A0109000CE6F9 /* ViewController.swift */; };
+		CA1C2308245A018A000CE6F9 /* VisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C2307245A018A000CE6F9 /* VisionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		CA1C22EF2459FF18000CE6F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA1C22F22459FF18000CE6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA1C22F42459FF18000CE6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1C22FD245A0053000CE6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA1C22FF245A0094000CE6F9 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisionObjectRecognitionViewController.swift; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+		CA1C2301245A009D000CE6F9 /* ObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ObjectDetector.mlmodel; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/ObjectDetector.mlmodel; sourceTree = "<group>"; };
+		CA1C2305245A0109000CE6F9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/ViewController.swift; sourceTree = "<group>"; };
+		CA1C2307245A018A000CE6F9 /* VisionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +71,13 @@
 				CA1C22EA2459FF11000CE6F9 /* ContentView.swift */,
 				CA1C22EC2459FF18000CE6F9 /* Assets.xcassets */,
 				CA1C22F12459FF18000CE6F9 /* LaunchScreen.storyboard */,
+				CA1C22FC245A0053000CE6F9 /* Main.storyboard */,
+				CA1C22FF245A0094000CE6F9 /* VisionObjectRecognitionViewController.swift */,
+				CA1C2301245A009D000CE6F9 /* ObjectDetector.mlmodel */,
+				CA1C2305245A0109000CE6F9 /* ViewController.swift */,
 				CA1C22F42459FF18000CE6F9 /* Info.plist */,
 				CA1C22EE2459FF18000CE6F9 /* Preview Content */,
+				CA1C2307245A018A000CE6F9 /* VisionController.swift */,
 			);
 			path = P2B;
 			sourceTree = "<group>";
@@ -136,6 +151,7 @@
 				CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */,
 				CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */,
 				CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */,
+				CA1C22FE245A0053000CE6F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1C22E72459FF11000CE6F9 /* AppDelegate.swift in Sources */,
+				CA1C2300245A0094000CE6F9 /* VisionObjectRecognitionViewController.swift in Sources */,
 				CA1C22E92459FF11000CE6F9 /* SceneDelegate.swift in Sources */,
 				CA1C22EB2459FF11000CE6F9 /* ContentView.swift in Sources */,
+				CA1C2306245A0109000CE6F9 /* ViewController.swift in Sources */,
+				CA1C2302245A009D000CE6F9 /* ObjectDetector.mlmodel in Sources */,
+				CA1C2308245A018A000CE6F9 /* VisionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +181,14 @@
 				CA1C22F22459FF18000CE6F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CA1C22FC245A0053000CE6F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1C22FD245A0053000CE6F9 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

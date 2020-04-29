@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isVisionPresented = false
+    
     var body: some View {
-        Text("Hello, World!")
+        Button(action: {
+            self.isVisionPresented.toggle()
+        }) {
+            Text("Go Descover!")
+        }.sheet(isPresented: self.$isVisionPresented) {
+            VisionController()
+        }
     }
 }
 
