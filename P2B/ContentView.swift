@@ -8,17 +8,26 @@
 
 import SwiftUI
 
+var dict: [String] = []
+
 struct ContentView: View {
     
     @State var isVisionPresented = false
     
     var body: some View {
-        Button(action: {
-            self.isVisionPresented.toggle()
-        }) {
-            Text("Go Discover!")
-        }.sheet(isPresented: self.$isVisionPresented) {
-            VisionViewController()
+        VStack {
+            Button(action: {
+                self.isVisionPresented.toggle()
+            }) {
+                Text("Go Discover!")
+            }.sheet(isPresented: self.$isVisionPresented) {
+                VisionViewController()
+            }
+            List {
+                ForEach(dict, id: \.self) { i in
+                    Text(i)
+                }
+            }
         }
     }
 }

@@ -60,11 +60,26 @@ class VisionObjectRecognitionViewController: ViewController {
             let textLayer = self.createTextSubLayerInBounds(objectBounds,
                                                             identifier: topLabelObservation.identifier,
                                                             confidence: topLabelObservation.confidence)
+            if topLabelObservation.confidence > 0.9 {
+                if !hasYet(word: topLabelObservation.identifier) {
+                    dict.append(topLabelObservation.identifier)
+                }
+            }
+            
             shapeLayer.addSublayer(textLayer)
             detectionOverlay.addSublayer(shapeLayer)
         }
         self.updateLayerGeometry()
         CATransaction.commit()
+    }
+    
+    func hasYet(word: String) -> Bool {
+        for i in dict {
+            if i == word {
+                return true
+            }
+        }
+        return false
     }
     
     override func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
