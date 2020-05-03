@@ -16,7 +16,7 @@ struct ContentView: View {
         Button(action: {
             self.isVisionPresented.toggle()
         }) {
-            Text("Go Descover!")
+            Text("Go Discover!")
         }.sheet(isPresented: self.$isVisionPresented) {
             VisionController()
         }
