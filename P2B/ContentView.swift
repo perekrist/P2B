@@ -22,22 +22,26 @@ struct ContentView: View {
             }) {
                 Text("Go Discover!")
             }
+            .padding()
+            .sheet(isPresented: self.$isVisionPresented) {
+                VisionViewController()
+            }
+            
             Button(action: {
                 self.isARViewPresented.toggle()
             }) {
                 Text("Go AR!")
             }
+            .padding()
+            .sheet(isPresented: self.$isARViewPresented) {
+                ARViewContainer()
+            }
+            
             List {
                 ForEach(dict, id: \.self) { i in
                     Text(i)
                 }
             }
-        }
-        .sheet(isPresented: self.$isVisionPresented) {
-            VisionViewController()
-        }
-        .sheet(isPresented: self.$isARViewPresented) {
-            ARViewContainer()
         }
     }
 }
