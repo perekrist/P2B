@@ -13,6 +13,7 @@ var dict: [String] = []
 struct ContentView: View {
     
     @State var isVisionPresented = false
+    @State var isARViewPresented = false
     
     var body: some View {
         VStack {
@@ -20,14 +21,23 @@ struct ContentView: View {
                 self.isVisionPresented.toggle()
             }) {
                 Text("Go Discover!")
-            }.sheet(isPresented: self.$isVisionPresented) {
-                VisionViewController()
+            }
+            Button(action: {
+                self.isARViewPresented.toggle()
+            }) {
+                Text("Go AR!")
             }
             List {
                 ForEach(dict, id: \.self) { i in
                     Text(i)
                 }
             }
+        }
+        .sheet(isPresented: self.$isVisionPresented) {
+            VisionViewController()
+        }
+        .sheet(isPresented: self.$isARViewPresented) {
+            ARViewContainer()
         }
     }
 }
