@@ -13,11 +13,11 @@
 		CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22EC2459FF18000CE6F9 /* Assets.xcassets */; };
 		CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22EF2459FF18000CE6F9 /* Preview Assets.xcassets */; };
 		CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22F12459FF18000CE6F9 /* LaunchScreen.storyboard */; };
-		CA1C2308245A018A000CE6F9 /* VisionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C2307245A018A000CE6F9 /* VisionController.swift */; };
-		CAA2A9DC245EB2DE00F0BDC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9D9245EB2DE00F0BDC3 /* ViewController.swift */; };
-		CAA2A9DD245EB2DE00F0BDC3 /* ObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9DA245EB2DE00F0BDC3 /* ObjectDetector.mlmodel */; };
-		CAA2A9DE245EB2DE00F0BDC3 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9DB245EB2DE00F0BDC3 /* VisionObjectRecognitionViewController.swift */; };
-		CAA2A9E1245EB30A00F0BDC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA2A9DF245EB30A00F0BDC3 /* Main.storyboard */; };
+		CAA2A9E3245EB7B600F0BDC3 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9E2245EB7B600F0BDC3 /* VisionViewController.swift */; };
+		CAA2A9E5245EB7E700F0BDC3 /* VisionScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA2A9E4245EB7E700F0BDC3 /* VisionScreen.storyboard */; };
+		CAA2A9E7245EB8F600F0BDC3 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9E6245EB8F600F0BDC3 /* VisionObjectRecognitionViewController.swift */; };
+		CAA2A9E9245EB92100F0BDC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9E8245EB92100F0BDC3 /* ViewController.swift */; };
+		CAA2A9EB245EBD1600F0BDC3 /* ObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CAA2A9EA245EBD1600F0BDC3 /* ObjectDetector.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +29,11 @@
 		CA1C22EF2459FF18000CE6F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA1C22F22459FF18000CE6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA1C22F42459FF18000CE6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA1C2307245A018A000CE6F9 /* VisionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionController.swift; sourceTree = "<group>"; };
-		CAA2A9D9245EB2DE00F0BDC3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/ViewController.swift; sourceTree = "<group>"; };
-		CAA2A9DA245EB2DE00F0BDC3 /* ObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ObjectDetector.mlmodel; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/ObjectDetector.mlmodel; sourceTree = "<group>"; };
-		CAA2A9DB245EB2DE00F0BDC3 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisionObjectRecognitionViewController.swift; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
-		CAA2A9E0245EB30A00F0BDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Downloads/RecognizingObjectsInLiveCapture/BreakfastFinder/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAA2A9E2245EB7B600F0BDC3 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		CAA2A9E4245EB7E700F0BDC3 /* VisionScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VisionScreen.storyboard; sourceTree = "<group>"; };
+		CAA2A9E6245EB8F600F0BDC3 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+		CAA2A9E8245EB92100F0BDC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAA2A9EA245EBD1600F0BDC3 /* ObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ObjectDetector.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,7 @@
 		CA1C22E52459FF11000CE6F9 /* P2B */ = {
 			isa = PBXGroup;
 			children = (
-				CAA2A9DF245EB30A00F0BDC3 /* Main.storyboard */,
-				CAA2A9DA245EB2DE00F0BDC3 /* ObjectDetector.mlmodel */,
-				CAA2A9D9245EB2DE00F0BDC3 /* ViewController.swift */,
-				CAA2A9DB245EB2DE00F0BDC3 /* VisionObjectRecognitionViewController.swift */,
+				CAA2A9EA245EBD1600F0BDC3 /* ObjectDetector.mlmodel */,
 				CA1C22E62459FF11000CE6F9 /* AppDelegate.swift */,
 				CA1C22E82459FF11000CE6F9 /* SceneDelegate.swift */,
 				CA1C22EA2459FF11000CE6F9 /* ContentView.swift */,
@@ -77,7 +74,10 @@
 				CA1C22F12459FF18000CE6F9 /* LaunchScreen.storyboard */,
 				CA1C22F42459FF18000CE6F9 /* Info.plist */,
 				CA1C22EE2459FF18000CE6F9 /* Preview Content */,
-				CA1C2307245A018A000CE6F9 /* VisionController.swift */,
+				CAA2A9E2245EB7B600F0BDC3 /* VisionViewController.swift */,
+				CAA2A9E4245EB7E700F0BDC3 /* VisionScreen.storyboard */,
+				CAA2A9E6245EB8F600F0BDC3 /* VisionObjectRecognitionViewController.swift */,
+				CAA2A9E8245EB92100F0BDC3 /* ViewController.swift */,
 			);
 			path = P2B;
 			sourceTree = "<group>";
@@ -150,8 +150,8 @@
 			files = (
 				CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */,
 				CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */,
+				CAA2A9E5245EB7E700F0BDC3 /* VisionScreen.storyboard in Resources */,
 				CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */,
-				CAA2A9E1245EB30A00F0BDC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,13 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA2A9DC245EB2DE00F0BDC3 /* ViewController.swift in Sources */,
+				CAA2A9EB245EBD1600F0BDC3 /* ObjectDetector.mlmodel in Sources */,
+				CAA2A9E9245EB92100F0BDC3 /* ViewController.swift in Sources */,
+				CAA2A9E3245EB7B600F0BDC3 /* VisionViewController.swift in Sources */,
 				CA1C22E72459FF11000CE6F9 /* AppDelegate.swift in Sources */,
 				CA1C22E92459FF11000CE6F9 /* SceneDelegate.swift in Sources */,
-				CAA2A9DD245EB2DE00F0BDC3 /* ObjectDetector.mlmodel in Sources */,
 				CA1C22EB2459FF11000CE6F9 /* ContentView.swift in Sources */,
-				CA1C2308245A018A000CE6F9 /* VisionController.swift in Sources */,
-				CAA2A9DE245EB2DE00F0BDC3 /* VisionObjectRecognitionViewController.swift in Sources */,
+				CAA2A9E7245EB8F600F0BDC3 /* VisionObjectRecognitionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,14 +181,6 @@
 				CA1C22F22459FF18000CE6F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		CAA2A9DF245EB30A00F0BDC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAA2A9E0245EB30A00F0BDC3 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

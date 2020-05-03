@@ -18,7 +18,7 @@ struct ContentView: View {
         }) {
             Text("Go Discover!")
         }.sheet(isPresented: self.$isVisionPresented) {
-            VisionController()
+            VisionViewController()
         }
     }
 }
