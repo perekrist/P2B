@@ -1,16 +1,14 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  P2B
 //
-//  Created by Кристина Перегудова on 30.04.2020.
+//  Created by Кристина Перегудова on 04.05.2020.
 //  Copyright © 2020 Кристина Перегудова. All rights reserved.
 //
 
 import SwiftUI
 
-var dict: [String] = []
-
-struct ContentView: View {
+struct HomeView: View {
     
     @State var isVisionPresented = false
     @State var isARViewPresented = false
@@ -36,18 +34,12 @@ struct ContentView: View {
             .sheet(isPresented: self.$isARViewPresented) {
                 ARViewContainer()
             }
-            
-            List {
-                ForEach(dict, id: \.self) { i in
-                    Text(i)
-                }
-            }
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }
