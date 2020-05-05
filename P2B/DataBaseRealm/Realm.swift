@@ -13,6 +13,7 @@ class RealmObserver {
     
     let config = Realm.Configuration(schemaVersion: 3)
     var dictionary: [String] = []
+    let voiceObserver = VoiceObserver()
     
 //    init() {
 //        initTable()
@@ -27,6 +28,7 @@ class RealmObserver {
                     realm.add(newWord)
                 })
                 print("word saved")
+                voiceObserver.voiceGenerator(word: word.word)
             } catch {
                 print(error.localizedDescription)
             }

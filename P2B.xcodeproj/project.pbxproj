@@ -25,6 +25,7 @@
 		CAA2AA14245F122300F0BDC3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = CAA2AA13245F122300F0BDC3 /* Experience.rcproject */; };
 		CAF0D6AB24615809008F9063 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D6AA24615809008F9063 /* Word.swift */; };
 		CAF0D6AD24616B55008F9063 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D6AC24616B55008F9063 /* Realm.swift */; };
+		CAF0D6B02461C60A008F9063 /* VoiceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D6AF2461C60A008F9063 /* VoiceObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		CAA2AA13245F122300F0BDC3 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		CAF0D6AA24615809008F9063 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		CAF0D6AC24616B55008F9063 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		CAF0D6AF2461C60A008F9063 /* VoiceObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceObserver.swift; sourceTree = "<group>"; };
 		DD0A3B89594F511B02C4EB09 /* Pods_P2B.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P2B.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		CA1C22E52459FF11000CE6F9 /* P2B */ = {
 			isa = PBXGroup;
 			children = (
+				CAF0D6AE2461C5E4008F9063 /* TextToVoice */,
 				CAF0D6A9246157ED008F9063 /* DataBaseRealm */,
 				CA709D9B246007DA003AFC51 /* View */,
 				CAA2A9ED245F0EE700F0BDC3 /* AR */,
@@ -154,6 +157,14 @@
 				CAF0D6AC24616B55008F9063 /* Realm.swift */,
 			);
 			path = DataBaseRealm;
+			sourceTree = "<group>";
+		};
+		CAF0D6AE2461C5E4008F9063 /* TextToVoice */ = {
+			isa = PBXGroup;
+			children = (
+				CAF0D6AF2461C60A008F9063 /* VoiceObserver.swift */,
+			);
+			path = TextToVoice;
 			sourceTree = "<group>";
 		};
 		F764E804BB2CE59AA6FFC431 /* Frameworks */ = {
@@ -288,6 +299,7 @@
 				CAF0D6AB24615809008F9063 /* Word.swift in Sources */,
 				CAF0D6AD24616B55008F9063 /* Realm.swift in Sources */,
 				CA1C22E72459FF11000CE6F9 /* AppDelegate.swift in Sources */,
+				CAF0D6B02461C60A008F9063 /* VoiceObserver.swift in Sources */,
 				CAA2AA14245F122300F0BDC3 /* Experience.rcproject in Sources */,
 				CA1C22E92459FF11000CE6F9 /* SceneDelegate.swift in Sources */,
 				CA709D9A246007A9003AFC51 /* DictionaryView.swift in Sources */,
