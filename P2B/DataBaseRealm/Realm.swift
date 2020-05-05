@@ -14,12 +14,12 @@ class RealmObserver {
     let config = Realm.Configuration(schemaVersion: 3)
     var dictionary: [String] = []
     
-    init() {
-        initTable()
-    }
+//    init() {
+//        initTable()
+//    }
     
     func saveWord(word: Word) {
-        if hasYet(word: word.word) {
+        if !hasYet(word: word.word) {
             do {
                 let realm = try Realm(configuration: config)
                 let newWord = word
@@ -73,6 +73,23 @@ class RealmObserver {
                 realm.add(newWord)
             })
             print("dict init")
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func deleteWord(word: String) {
+        do {
+            let realm = try Realm(configuration: config)
+            let result = realm.objects(Word.self)
+            for i in result {
+                try realm.write({
+                    if i.word == word {
+                        realm.delete(i)
+                    }
+                })
+            }
+            print("word deleted")
         } catch {
             print(error.localizedDescription)
         }

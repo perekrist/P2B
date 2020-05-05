@@ -8,6 +8,7 @@
 
 import SwiftUI
 import RealmSwift
+import Combine
 
 struct DictionaryView: View {
     
@@ -19,11 +20,23 @@ struct DictionaryView: View {
             List {
                 ForEach(dict, id: \.self) { i in
                     Text(i)
-                }
+                }.onMove(perform: self.move)
+                .onDelete(perform: self.delete)
             }.onAppear() {
                 self.dict = self.realm.loadDictionary()
             }.navigationBarTitle("Dictionary")
+            .navigationBarItems(trailing: EditButton())
         }
+    }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        self.dict.move(fromOffsets: source, toOffset: destination)
+        self.realm.dictionary.move(fromOffsets: source, toOffset: destination)
+    }
+            
+    func delete(at offsets: IndexSet) {
+        self.realm.deleteWord(word: self.dict[offsets.first!])
+        self.dict.remove(atOffsets: offsets)
     }
 }
 
