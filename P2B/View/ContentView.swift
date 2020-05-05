@@ -7,11 +7,10 @@
 //
 
 import SwiftUI
-
-var dict: [String] = []
+import RealmSwift
 
 struct ContentView: View {
-    
+        
     var body: some View {
         TabView {
             HomeView().tabItem {

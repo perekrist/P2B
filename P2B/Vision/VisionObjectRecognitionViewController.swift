@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 import Vision
+import RealmSwift
 
 class VisionObjectRecognitionViewController: ViewController {
     
     private var detectionOverlay: CALayer! = nil
+    let config = Realm.Configuration(schemaVersion: 2)
     
     // Vision parts
     private var requests = [VNRequest]()
@@ -60,9 +62,20 @@ class VisionObjectRecognitionViewController: ViewController {
             let textLayer = self.createTextSubLayerInBounds(objectBounds,
                                                             identifier: topLabelObservation.identifier,
                                                             confidence: topLabelObservation.confidence)
-            if topLabelObservation.confidence > 0.9 {
+            if topLabelObservation.confidence > 0.95 {
                 if !hasYet(word: topLabelObservation.identifier) {
-                    dict.append(topLabelObservation.identifier)
+                    do {
+                        let realm = try Realm(configuration: config)
+                        let newWord = Word()
+                        newWord.word = topLabelObservation.identifier
+                        try realm.write({
+                            realm.add(newWord)
+                            print("success")
+                        })
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                    
                 }
             }
             
@@ -74,12 +87,24 @@ class VisionObjectRecognitionViewController: ViewController {
     }
     
     func hasYet(word: String) -> Bool {
-        for i in dict {
-            if i == word {
-                return true
+        do {
+            let realm = try Realm(configuration: config)
+            let result = realm.objects(Word.self)
+            if result.first != nil {
+                for i in result {
+                    if i.word == word {
+                        return true
+                    }
+                }
+                return false
+            } else {
+                return false
             }
+        } catch {
+            print(error.localizedDescription)
+            
         }
-        return false
+        return true
     }
     
     override func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
