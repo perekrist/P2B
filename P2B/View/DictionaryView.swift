@@ -11,26 +11,18 @@ import RealmSwift
 
 struct DictionaryView: View {
     
-    let config = Realm.Configuration(schemaVersion: 2)
-    
-    @State var dictionary: [String] = []
-    
+    let realm = RealmObserver()
+    @State var dict: [String] = []
+        
     var body: some View {
-        List {
-            ForEach(dictionary, id: \.self) { i in
-                Text(i)
-            }
-        }.onAppear() {
-            do {
-                let realm = try Realm(configuration: self.config)
-                let result = realm.objects(Word.self)
-                self.dictionary.removeAll()
-                for i in result {
-                    self.dictionary.append(i.word)
+        NavigationView {
+            List {
+                ForEach(dict, id: \.self) { i in
+                    Text(i)
                 }
-            } catch {
-                print(error.localizedDescription)
-            }
+            }.onAppear() {
+                self.dict = self.realm.loadDictionary()
+            }.navigationBarTitle("Dictionary")
         }
     }
 }
