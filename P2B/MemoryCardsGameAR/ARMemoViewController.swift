@@ -64,21 +64,19 @@ class ARMemoViewController: UIViewController {
                 cancellable?.cancel()
             }, receiveValue: { entities in
                 var objects: [ModelEntity] = []
-                for entity in entities {
+                for index in 0..<entities.count {
+                    let entity = entities[index]
                     entity.setScale(SIMD3<Float>(0.002, 0.002, 0.002), relativeTo: self.anchor)
                     entity.generateCollisionShapes(recursive: true)
-                    for _ in 1...2 {
-                        objects.append(entity)
-                        let mesh1 = MeshResource.generateText("")
-                        let color1 = UIColor.systemBlue
-                        let material1 = UnlitMaterial(color: color1)
-                        let entity1 = ModelEntity(mesh: mesh1, materials: [material1])
-                        entity1.setScale(SIMD3<Float>(0.002, 0.002, 0.002), relativeTo: self.anchor)
-                        entity1.generateCollisionShapes(recursive: true)
-                        objects.append(entity1)
-//                        objects.append(entity.clone(recursive: true))
-                        
-                    }
+                    objects.append(entity.clone(recursive: true))
+                    
+                    let mesh1 = MeshResource.generateText(self.words[index])
+                    let color1 = UIColor.systemBlue
+                    let material1 = UnlitMaterial(color: color1)
+                    let entity1 = ModelEntity(mesh: mesh1, materials: [material1])
+                    entity1.setScale(SIMD3<Float>(0.0015, 0.0015, 0.0015), relativeTo: self.anchor)
+                    entity1.generateCollisionShapes(recursive: true)
+                    objects.append(entity1)
                 }
                 objects.shuffle()
                         
