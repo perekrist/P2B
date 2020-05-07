@@ -69,6 +69,7 @@ class ARMemoViewController: UIViewController {
     }
     
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+        print("tap")
         let tapLocation = sender.location(in: arView)
         if let card = arView.entity(at: tapLocation) {
             if card.transform.rotation.angle == .pi {
@@ -82,4 +83,5 @@ class ARMemoViewController: UIViewController {
             }
         }
     }
+    
 }
