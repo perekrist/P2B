@@ -13,6 +13,7 @@ import Combine
 class ARMemoViewController: UIViewController {
 
     @IBOutlet var arView: ARView!
+    var words: [String] = ["car", "plane", "solider", "robot", "car", "plane", "solider", "robot"]
         
     var anchor: AnchorEntity = AnchorEntity()
     
@@ -45,13 +46,18 @@ class ARMemoViewController: UIViewController {
         let boxSize: Float = 0.7
         let occlusionBoxMesh = MeshResource.generateBox(size: boxSize)
         let occlusionBox = ModelEntity(mesh: occlusionBoxMesh, materials: [OcclusionMaterial()])
-        occlusionBox.position.y = -boxSize / 2
+        occlusionBox.position.y = -boxSize / 2 - 0.001
+        anchor.addChild(occlusionBox)
         
         var cancellable: AnyCancellable? = nil
-        cancellable = ModelEntity.loadModelAsync(named: "01")
-            .append(ModelEntity.loadModelAsync(named: "02"))
-            .append(ModelEntity.loadModelAsync(named: "03"))
-            .append(ModelEntity.loadModelAsync(named: "04"))
+        cancellable = ModelEntity.loadModelAsync(named: words[0])
+            .append(ModelEntity.loadModelAsync(named: words[1]))
+            .append(ModelEntity.loadModelAsync(named: words[2]))
+            .append(ModelEntity.loadModelAsync(named: words[3]))
+            .append(ModelEntity.loadModelAsync(named: words[4]))
+            .append(ModelEntity.loadModelAsync(named: words[5]))
+            .append(ModelEntity.loadModelAsync(named: words[6]))
+            .append(ModelEntity.loadModelAsync(named: words[7]))
             .collect()
             .sink(receiveCompletion: { error in
                 print("Error: \(error)")
@@ -62,7 +68,16 @@ class ARMemoViewController: UIViewController {
                     entity.setScale(SIMD3<Float>(0.002, 0.002, 0.002), relativeTo: self.anchor)
                     entity.generateCollisionShapes(recursive: true)
                     for _ in 1...2 {
-                        objects.append(entity.clone(recursive: true))
+                        objects.append(entity)
+                        let mesh1 = MeshResource.generateText("")
+                        let color1 = UIColor.systemBlue
+                        let material1 = UnlitMaterial(color: color1)
+                        let entity1 = ModelEntity(mesh: mesh1, materials: [material1])
+                        entity1.setScale(SIMD3<Float>(0.002, 0.002, 0.002), relativeTo: self.anchor)
+                        entity1.generateCollisionShapes(recursive: true)
+                        objects.append(entity1)
+//                        objects.append(entity.clone(recursive: true))
+                        
                     }
                 }
                 objects.shuffle()
