@@ -26,10 +26,10 @@
 		CAD8685B2463CD0C00EEAC77 /* ARMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8685A2463CD0C00EEAC77 /* ARMemoViewController.swift */; };
 		CAD8685D2463CD3500EEAC77 /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD8685C2463CD3500EEAC77 /* Memo.storyboard */; };
 		CAD8685F2463D1C700EEAC77 /* MemoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD8685E2463D1C700EEAC77 /* MemoContainer.swift */; };
-		CAD868652463D45C00EEAC77 /* memory_card_2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868612463D45C00EEAC77 /* memory_card_2.usdz */; };
-		CAD868662463D45C00EEAC77 /* memory_card_1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868622463D45C00EEAC77 /* memory_card_1.usdz */; };
-		CAD868672463D45C00EEAC77 /* memory_card_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868632463D45C00EEAC77 /* memory_card_3.usdz */; };
-		CAD868682463D45C00EEAC77 /* memory_card_4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868642463D45C00EEAC77 /* memory_card_4.usdz */; };
+		CAD868652463D45C00EEAC77 /* 02.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868612463D45C00EEAC77 /* 02.usdz */; };
+		CAD868672463D45C00EEAC77 /* 03.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868632463D45C00EEAC77 /* 03.usdz */; };
+		CAD868682463D45C00EEAC77 /* 04.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868642463D45C00EEAC77 /* 04.usdz */; };
+		CAD8686A2463E25300EEAC77 /* 01.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAD868692463E25300EEAC77 /* 01.usdz */; };
 		CAF0D6AB24615809008F9063 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D6AA24615809008F9063 /* Word.swift */; };
 		CAF0D6AD24616B55008F9063 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D6AC24616B55008F9063 /* Realm.swift */; };
 		CAF0D6B02461C60A008F9063 /* VoiceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF0D6AF2461C60A008F9063 /* VoiceObserver.swift */; };
@@ -58,10 +58,10 @@
 		CAD8685A2463CD0C00EEAC77 /* ARMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMemoViewController.swift; sourceTree = "<group>"; };
 		CAD8685C2463CD3500EEAC77 /* Memo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
 		CAD8685E2463D1C700EEAC77 /* MemoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoContainer.swift; sourceTree = "<group>"; };
-		CAD868612463D45C00EEAC77 /* memory_card_2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = memory_card_2.usdz; sourceTree = "<group>"; };
-		CAD868622463D45C00EEAC77 /* memory_card_1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = memory_card_1.usdz; sourceTree = "<group>"; };
-		CAD868632463D45C00EEAC77 /* memory_card_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = memory_card_3.usdz; sourceTree = "<group>"; };
-		CAD868642463D45C00EEAC77 /* memory_card_4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = memory_card_4.usdz; sourceTree = "<group>"; };
+		CAD868612463D45C00EEAC77 /* 02.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 02.usdz; sourceTree = "<group>"; };
+		CAD868632463D45C00EEAC77 /* 03.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 03.usdz; sourceTree = "<group>"; };
+		CAD868642463D45C00EEAC77 /* 04.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 04.usdz; sourceTree = "<group>"; };
+		CAD868692463E25300EEAC77 /* 01.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = 01.usdz; sourceTree = "<group>"; };
 		CAF0D6AA24615809008F9063 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		CAF0D6AC24616B55008F9063 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		CAF0D6AF2461C60A008F9063 /* VoiceObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceObserver.swift; sourceTree = "<group>"; };
@@ -179,10 +179,10 @@
 		CAD868602463D29400EEAC77 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				CAD868622463D45C00EEAC77 /* memory_card_1.usdz */,
-				CAD868612463D45C00EEAC77 /* memory_card_2.usdz */,
-				CAD868632463D45C00EEAC77 /* memory_card_3.usdz */,
-				CAD868642463D45C00EEAC77 /* memory_card_4.usdz */,
+				CAD868692463E25300EEAC77 /* 01.usdz */,
+				CAD868612463D45C00EEAC77 /* 02.usdz */,
+				CAD868632463D45C00EEAC77 /* 03.usdz */,
+				CAD868642463D45C00EEAC77 /* 04.usdz */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -274,13 +274,13 @@
 			files = (
 				CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */,
 				CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */,
-				CAD868672463D45C00EEAC77 /* memory_card_3.usdz in Resources */,
+				CAD868672463D45C00EEAC77 /* 03.usdz in Resources */,
 				CAA2A9E5245EB7E700F0BDC3 /* VisionScreen.storyboard in Resources */,
-				CAD868652463D45C00EEAC77 /* memory_card_2.usdz in Resources */,
-				CAD868682463D45C00EEAC77 /* memory_card_4.usdz in Resources */,
+				CAD868652463D45C00EEAC77 /* 02.usdz in Resources */,
+				CAD868682463D45C00EEAC77 /* 04.usdz in Resources */,
+				CAD8686A2463E25300EEAC77 /* 01.usdz in Resources */,
 				CAD8685D2463CD3500EEAC77 /* Memo.storyboard in Resources */,
 				CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */,
-				CAD868662463D45C00EEAC77 /* memory_card_1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
