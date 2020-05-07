@@ -21,6 +21,7 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
+                  "1ED2C0BF-F5A7-481C-AE50-1E6A52C9EF89" : null,
                   "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
                   "5C2DC80B-DAB3-4501-BCD9-C262F6307E29" : {
                     "overrides" : {

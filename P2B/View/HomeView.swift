@@ -12,6 +12,8 @@ struct HomeView: View {
     
     @State var isVisionPresented = false
     @State var isARViewPresented = false
+    @State var isMemoViewPresented = false
+    
     let voiceObserver = VoiceObserver()
     
     var body: some View {
@@ -40,6 +42,16 @@ struct HomeView: View {
             .padding()
             .sheet(isPresented: self.$isARViewPresented) {
                 ARViewContainer()
+            }
+            
+            Button(action: {
+                self.isMemoViewPresented.toggle()
+            }) {
+                Text("Memo!")
+            }
+            .padding()
+            .sheet(isPresented: self.$isMemoViewPresented) {
+                MemoContainer()
             }
         }
     }
