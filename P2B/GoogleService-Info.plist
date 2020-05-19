@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>11299286126-hb2eas678t8epk8njdj4qhaa7sd3gd61.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.11299286126-hb2eas678t8epk8njdj4qhaa7sd3gd61</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAWuYw8Gq1q1YzhcNQEV42QQDbFvu0by48</string>
+	<key>GCM_SENDER_ID</key>
+	<string>11299286126</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.perekrist.P2B</string>
+	<key>PROJECT_ID</key>
+	<string>p2b-66ada</string>
+	<key>STORAGE_BUCKET</key>
+	<string>p2b-66ada.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:11299286126:ios:8633d52207411c89218a7f</string>
+	<key>DATABASE_URL</key>
+	<string>https://p2b-66ada.firebaseio.com</string>
+</dict>
+</plist>
