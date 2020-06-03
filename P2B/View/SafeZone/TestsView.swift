@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct TestsView: View {
+    @State private var tests: [String] = ["test1", "test2", "test3"]
+    
     var body: some View {
-        Text("TestsView")
+        NavigationView {
+            List(tests, id: \.self) { test in
+                
+                VStack {
+                    Image(test)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width - 50)
+
+                }
+                .padding()
+                
+            }.navigationBarTitle("Tests")
+        }
     }
 }
 
