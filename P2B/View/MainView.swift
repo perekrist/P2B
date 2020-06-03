@@ -25,22 +25,22 @@ struct MainView: View {
             }
             
             TabView {
-                Text("Dictionary")
+                DictionaryView()
                     .tabItem {
                         Image(systemName: "list.dash")
                         Text("Dictionary")
                 }
-                Text("Games")
+                GamesView()
                     .tabItem {
                         Image(systemName: "gamecontroller")
                         Text("Games")
                 }
-                Text("Locations")
+                LocationsView()
                     .tabItem {
                         Image(systemName: "location")
                         Text("Locations")
                 }
-                Text("Test")
+                TestsView()
                     .tabItem {
                         Image(systemName: "square.and.pencil")
                         Text("Tests")
