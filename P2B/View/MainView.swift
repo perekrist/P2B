@@ -12,15 +12,47 @@ import Firebase
 struct MainView: View {
     var body: some View {
         VStack {
-            Text("MainView")
-            Button(action: {
-                try! Auth.auth().signOut()
-                UserDefaults.standard.set(false, forKey: "status")
-                NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
-            }) {
-                Text("Click to LogOUT")
+            
+            HStack {
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Image(systemName: "person")
+                    
+                }.padding()
+            }
+            
+            TabView {
+                Text("Dictionary")
+                    .tabItem {
+                        Image(systemName: "list.dash")
+                        Text("Dictionary")
+                }
+                Text("Games")
+                    .tabItem {
+                        Image(systemName: "gamecontroller")
+                        Text("Games")
+                }
+                Text("Locations")
+                    .tabItem {
+                        Image(systemName: "location")
+                        Text("Locations")
+                }
+                Text("Test")
+                    .tabItem {
+                        Image(systemName: "square.and.pencil")
+                        Text("Tests")
+                }
             }
         }
+    }
+    
+    func LogOut() {
+        try! Auth.auth().signOut()
+        UserDefaults.standard.set(false, forKey: "status")
+        NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
     }
 }
 

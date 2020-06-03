@@ -92,6 +92,7 @@
 		CA1C22E52459FF11000CE6F9 /* P2B */ = {
 			isa = PBXGroup;
 			children = (
+				CA871BDB2474F8DE008D124A /* ViewModel */,
 				CA871BCF24743F50008D124A /* View */,
 				CA871BCD24743EA6008D124A /* GoogleService-Info.plist */,
 				CA1C22E62459FF11000CE6F9 /* AppDelegate.swift */,
@@ -115,10 +116,9 @@
 		CA871BCF24743F50008D124A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CA1C22EA2459FF11000CE6F9 /* ContentView.swift */,
-				CA871BC724743C06008D124A /* ErrorView.swift */,
-				CA871BCB24743E10008D124A /* Extentios.swift */,
 				CA871BD024743F65008D124A /* Auth */,
+				CAED2A8324876EFE00024C9B /* Extentios */,
+				CA1C22EA2459FF11000CE6F9 /* ContentView.swift */,
 				CA871BD9247441F5008D124A /* MainView.swift */,
 			);
 			path = View;
@@ -131,6 +131,22 @@
 				CA871BD624743FCE008D124A /* RegistrationView.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		CA871BDB2474F8DE008D124A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAED2A8324876EFE00024C9B /* Extentios */ = {
+			isa = PBXGroup;
+			children = (
+				CA871BCB24743E10008D124A /* Extentios.swift */,
+				CA871BC724743C06008D124A /* ErrorView.swift */,
+			);
+			path = Extentios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
