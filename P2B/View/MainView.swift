@@ -30,15 +30,15 @@ struct MainView: View {
                         Image(systemName: "list.dash")
                         Text("Dictionary")
                 }
-                GamesView()
-                    .tabItem {
-                        Image(systemName: "gamecontroller")
-                        Text("Games")
-                }
                 LocationsView()
                     .tabItem {
                         Image(systemName: "location")
                         Text("Locations")
+                }
+                GamesView()
+                    .tabItem {
+                        Image(systemName: "gamecontroller")
+                        Text("Games")
                 }
                 TestsView()
                     .tabItem {
