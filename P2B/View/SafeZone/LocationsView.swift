@@ -17,11 +17,22 @@ struct LocationsView: View {
             List(locations, id: \.self) { location in
                 
                 VStack {
-                    Text(location)
-                        .font(.title)
+                    ZStack {
+                        Image(location)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: UIScreen.main.bounds.width - 60)
+                        .cornerRadius(20)
+
+                        
+//                    Text(location)
+//                        .padding()
+//                        .font(.largeTitle)
+//                        .foregroundColor(.white)
+//                        .padding()
+                    }
                 }
                 .padding()
-                .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.width / 2 + 50)
                 .background(Color.init(self.generateRandomColor()).opacity(0.5))
                 .cornerRadius(20)
                 

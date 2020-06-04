@@ -125,6 +125,7 @@
 		CA871BCF24743F50008D124A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CAED2A8F24877D3C00024C9B /* ParentZone */,
 				CAED2A8D2487761300024C9B /* SafeZone */,
 				CA871BD024743F65008D124A /* Auth */,
 				CAED2A8324876EFE00024C9B /* Extentios */,
@@ -175,6 +176,13 @@
 				CAED2A8B248775ED00024C9B /* LocationsView.swift */,
 			);
 			path = SafeZone;
+			sourceTree = "<group>";
+		};
+		CAED2A8F24877D3C00024C9B /* ParentZone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ParentZone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
