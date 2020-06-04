@@ -24,6 +24,18 @@
 		CAED2A88248775CE00024C9B /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A87248775CE00024C9B /* GamesView.swift */; };
 		CAED2A8A248775DD00024C9B /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A89248775DD00024C9B /* TestsView.swift */; };
 		CAED2A8C248775ED00024C9B /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A8B248775ED00024C9B /* LocationsView.swift */; };
+		CAED2AA424890E8E00024C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A9624890E8E00024C9B /* ViewController.swift */; };
+		CAED2AA524890E8E00024C9B /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A9724890E8E00024C9B /* VisionObjectRecognitionViewController.swift */; };
+		CAED2AA624890E8E00024C9B /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A9824890E8E00024C9B /* VisionViewController.swift */; };
+		CAED2AA724890E8E00024C9B /* ObjectDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A9924890E8E00024C9B /* ObjectDetector.mlmodel */; };
+		CAED2AA824890E8E00024C9B /* VisionScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAED2A9A24890E8E00024C9B /* VisionScreen.storyboard */; };
+		CAED2AA924890E8E00024C9B /* MemoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2A9C24890E8E00024C9B /* MemoContainer.swift */; };
+		CAED2AAA24890E8E00024C9B /* plane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAED2A9E24890E8E00024C9B /* plane.usdz */; };
+		CAED2AAB24890E8E00024C9B /* car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAED2A9F24890E8E00024C9B /* car.usdz */; };
+		CAED2AAC24890E8E00024C9B /* solider.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAED2AA024890E8E00024C9B /* solider.usdz */; };
+		CAED2AAD24890E8E00024C9B /* robot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CAED2AA124890E8E00024C9B /* robot.usdz */; };
+		CAED2AAE24890E8E00024C9B /* ARMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAED2AA224890E8E00024C9B /* ARMemoViewController.swift */; };
+		CAED2AAF24890E8E00024C9B /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAED2AA324890E8E00024C9B /* Memo.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +60,18 @@
 		CAED2A87248775CE00024C9B /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		CAED2A89248775DD00024C9B /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
 		CAED2A8B248775ED00024C9B /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		CAED2A9624890E8E00024C9B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAED2A9724890E8E00024C9B /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
+		CAED2A9824890E8E00024C9B /* VisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		CAED2A9924890E8E00024C9B /* ObjectDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ObjectDetector.mlmodel; sourceTree = "<group>"; };
+		CAED2A9A24890E8E00024C9B /* VisionScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VisionScreen.storyboard; sourceTree = "<group>"; };
+		CAED2A9C24890E8E00024C9B /* MemoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoContainer.swift; sourceTree = "<group>"; };
+		CAED2A9E24890E8E00024C9B /* plane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = plane.usdz; sourceTree = "<group>"; };
+		CAED2A9F24890E8E00024C9B /* car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = car.usdz; sourceTree = "<group>"; };
+		CAED2AA024890E8E00024C9B /* solider.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = solider.usdz; sourceTree = "<group>"; };
+		CAED2AA124890E8E00024C9B /* robot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot.usdz; sourceTree = "<group>"; };
+		CAED2AA224890E8E00024C9B /* ARMemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARMemoViewController.swift; sourceTree = "<group>"; };
+		CAED2AA324890E8E00024C9B /* Memo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +124,8 @@
 		CA1C22E52459FF11000CE6F9 /* P2B */ = {
 			isa = PBXGroup;
 			children = (
-				CAED2A84248775A200024C9B /* Model */,
-				CA871BDB2474F8DE008D124A /* ViewModel */,
+				CAED2A9B24890E8E00024C9B /* MemoryCardsGameAR */,
+				CAED2A9524890E8E00024C9B /* Vision */,
 				CA871BCF24743F50008D124A /* View */,
 				CA871BCD24743EA6008D124A /* GoogleService-Info.plist */,
 				CA1C22E62459FF11000CE6F9 /* AppDelegate.swift */,
@@ -144,13 +168,6 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		CA871BDB2474F8DE008D124A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CAED2A8324876EFE00024C9B /* Extentios */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,13 +175,6 @@
 				CA871BC724743C06008D124A /* ErrorView.swift */,
 			);
 			path = Extentios;
-			sourceTree = "<group>";
-		};
-		CAED2A84248775A200024C9B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		CAED2A8D2487761300024C9B /* SafeZone */ = {
@@ -183,6 +193,40 @@
 			children = (
 			);
 			path = ParentZone;
+			sourceTree = "<group>";
+		};
+		CAED2A9524890E8E00024C9B /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				CAED2A9624890E8E00024C9B /* ViewController.swift */,
+				CAED2A9724890E8E00024C9B /* VisionObjectRecognitionViewController.swift */,
+				CAED2A9824890E8E00024C9B /* VisionViewController.swift */,
+				CAED2A9924890E8E00024C9B /* ObjectDetector.mlmodel */,
+				CAED2A9A24890E8E00024C9B /* VisionScreen.storyboard */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		CAED2A9B24890E8E00024C9B /* MemoryCardsGameAR */ = {
+			isa = PBXGroup;
+			children = (
+				CAED2A9C24890E8E00024C9B /* MemoContainer.swift */,
+				CAED2A9D24890E8E00024C9B /* models */,
+				CAED2AA224890E8E00024C9B /* ARMemoViewController.swift */,
+				CAED2AA324890E8E00024C9B /* Memo.storyboard */,
+			);
+			path = MemoryCardsGameAR;
+			sourceTree = "<group>";
+		};
+		CAED2A9D24890E8E00024C9B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CAED2A9E24890E8E00024C9B /* plane.usdz */,
+				CAED2A9F24890E8E00024C9B /* car.usdz */,
+				CAED2AA024890E8E00024C9B /* solider.usdz */,
+				CAED2AA124890E8E00024C9B /* robot.usdz */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +290,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */,
+				CAED2AAD24890E8E00024C9B /* robot.usdz in Resources */,
 				CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */,
+				CAED2AAC24890E8E00024C9B /* solider.usdz in Resources */,
 				CA871BCE24743EA6008D124A /* GoogleService-Info.plist in Resources */,
+				CAED2AA824890E8E00024C9B /* VisionScreen.storyboard in Resources */,
+				CAED2AAA24890E8E00024C9B /* plane.usdz in Resources */,
+				CAED2AAB24890E8E00024C9B /* car.usdz in Resources */,
+				CAED2AAF24890E8E00024C9B /* Memo.storyboard in Resources */,
 				CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA871BD724743FCE008D124A /* LoginView.swift in Sources */,
+				CAED2AAE24890E8E00024C9B /* ARMemoViewController.swift in Sources */,
 				CA871BDA247441F5008D124A /* MainView.swift in Sources */,
 				CAED2A8A248775DD00024C9B /* TestsView.swift in Sources */,
 				CAED2A88248775CE00024C9B /* GamesView.swift in Sources */,
@@ -309,10 +360,15 @@
 				CA871BCC24743E10008D124A /* Extentios.swift in Sources */,
 				CA871BD824743FCE008D124A /* RegistrationView.swift in Sources */,
 				CA1C22E72459FF11000CE6F9 /* AppDelegate.swift in Sources */,
+				CAED2AA424890E8E00024C9B /* ViewController.swift in Sources */,
 				CA1C22E92459FF11000CE6F9 /* SceneDelegate.swift in Sources */,
 				CAED2A8C248775ED00024C9B /* LocationsView.swift in Sources */,
 				CAED2A86248775BB00024C9B /* DictionaryView.swift in Sources */,
+				CAED2AA924890E8E00024C9B /* MemoContainer.swift in Sources */,
 				CA1C22EB2459FF11000CE6F9 /* ContentView.swift in Sources */,
+				CAED2AA624890E8E00024C9B /* VisionViewController.swift in Sources */,
+				CAED2AA524890E8E00024C9B /* VisionObjectRecognitionViewController.swift in Sources */,
+				CAED2AA724890E8E00024C9B /* ObjectDetector.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
