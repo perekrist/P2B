@@ -41,6 +41,13 @@ struct LocationsView: View {
                 
                 
             }.navigationBarTitle("Locations")
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "person")
+                    }.padding()
+            )
                 .sheet(isPresented: self.$isVisionPresented) {
                     VisionViewController()
             }

@@ -32,8 +32,15 @@ struct GamesView: View {
                 
                 
             }.navigationBarTitle("Games")
-            .sheet(isPresented: self.$isMemoViewPresented) {
-                MemoContainer()
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "person")
+                    }.padding()
+            )
+                .sheet(isPresented: self.$isMemoViewPresented) {
+                    MemoContainer()
             }
         }
     }

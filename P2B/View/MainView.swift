@@ -13,16 +13,15 @@ struct MainView: View {
     var body: some View {
         VStack {
             
-            HStack {
-                Spacer()
-                
-                Button(action: {
-                    
-                }) {
-                    Image(systemName: "person")
-                    
-                }.padding()
-            }
+//            HStack {
+//                Spacer()
+//
+//                Button(action: {
+//
+//                }) {
+//                    Image(systemName: "person")
+//                }.padding()
+//            }
             
             TabView {
                 DictionaryView()

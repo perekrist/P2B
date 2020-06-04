@@ -17,14 +17,21 @@ struct TestsView: View {
                 
                 VStack {
                     Image(test)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: UIScreen.main.bounds.width - 50)
-
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: UIScreen.main.bounds.width - 50)
+                    
                 }
                 .padding()
                 
             }.navigationBarTitle("Tests")
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "person")
+                    }.padding()
+            )
         }
     }
 }

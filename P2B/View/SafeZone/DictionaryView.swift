@@ -17,6 +17,13 @@ struct DictionaryView: View {
             List(words, id: \.self) { word in
                 Text(word)
             }.navigationBarTitle("Dictionary")
+                .navigationBarItems(trailing:
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "person")
+                    }.padding()
+            )
         }
     }
 }
