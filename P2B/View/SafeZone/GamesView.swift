@@ -10,23 +10,31 @@ import SwiftUI
 
 struct GamesView: View {
     @State private var games: [String] = ["Memo", "Memo", "Memo", "Memo"]
+    @State var isMemoViewPresented = false
     
     var body: some View {
         NavigationView {
             List(games, id: \.self) { game in
                 
-                VStack {
-                    Text(game)
-                        .font(.title)
+                Button(action: {
+                    self.isMemoViewPresented.toggle()
+                }) {
+                    VStack {
+                        Text(game)
+                            .font(.title)
+                        
+                    }
+                    .padding()
+                    .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.width / 2 + 50)
+                    .background(Color.init(self.generateRandomColor()).opacity(0.5))
+                    .cornerRadius(20)
                 }
-                .padding()
-                .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.width / 2 + 50)
-                .background(Color.init(self.generateRandomColor()).opacity(0.5))
-                .cornerRadius(20)
-                
                 
                 
             }.navigationBarTitle("Games")
+            .sheet(isPresented: self.$isMemoViewPresented) {
+                MemoContainer()
+            }
         }
     }
     

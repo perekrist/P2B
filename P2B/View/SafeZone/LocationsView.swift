@@ -11,34 +11,39 @@ import SwiftUI
 struct LocationsView: View {
     
     @State private var locations: [String] = ["Breakfast", "Bathroom", "Pets", "Clothes", "Colors"]
+    @State var isVisionPresented = false
     
     var body: some View {
         NavigationView {
             List(locations, id: \.self) { location in
                 
-                VStack {
-                    ZStack {
-                        Image(location)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: UIScreen.main.bounds.width - 60)
-                        .cornerRadius(20)
-
-                        
-//                    Text(location)
-//                        .padding()
-//                        .font(.largeTitle)
-//                        .foregroundColor(.white)
-//                        .padding()
+                Button(action: {
+                    if location == "Breakfast" {
+                        self.isVisionPresented.toggle()
                     }
+                }) {
+                    VStack {
+                        Image(location)
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: UIScreen.main.bounds.width - 60)
+                            .cornerRadius(20)
+                        
+                        
+                    }
+                    .padding()
+                    .background(Color.init(self.generateRandomColor()).opacity(0.5))
+                    .cornerRadius(20)
                 }
-                .padding()
-                .background(Color.init(self.generateRandomColor()).opacity(0.5))
-                .cornerRadius(20)
+                
                 
                 
                 
             }.navigationBarTitle("Locations")
+                .sheet(isPresented: self.$isVisionPresented) {
+                    VisionViewController()
+            }
         }
     }
     

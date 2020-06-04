@@ -9,12 +9,10 @@
 import UIKit
 import AVFoundation
 import Vision
-import RealmSwift
 
 class VisionObjectRecognitionViewController: ViewController {
     
     private var detectionOverlay: CALayer! = nil
-    let realm = RealmObserver()
     
     // Vision parts
     private var requests = [VNRequest]()
@@ -62,11 +60,6 @@ class VisionObjectRecognitionViewController: ViewController {
             let textLayer = self.createTextSubLayerInBounds(objectBounds,
                                                             identifier: topLabelObservation.identifier,
                                                             confidence: topLabelObservation.confidence)
-            if topLabelObservation.confidence > 0.95 {
-                let newWord = Word()
-                newWord.word = topLabelObservation.identifier
-                realm.saveWord(word: newWord)
-            }
             
             shapeLayer.addSublayer(textLayer)
             detectionOverlay.addSublayer(shapeLayer)
