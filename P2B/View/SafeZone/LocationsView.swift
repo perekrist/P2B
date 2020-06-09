@@ -14,9 +14,8 @@ struct LocationsView: View {
     @State var isVisionPresented = false
     
     var body: some View {
-        NavigationView {
+        VStack {
             List(locations, id: \.self) { location in
-                
                 Button(action: {
                     if location == "breakfast" {
                         self.isVisionPresented.toggle()
@@ -29,27 +28,14 @@ struct LocationsView: View {
                             .aspectRatio(contentMode: .fill)
                             .frame(width: UIScreen.main.bounds.width - 60)
                             .cornerRadius(20)
-                        
-                        
                     }
                     .padding()
                     .background(Color.init(self.generateRandomColor()).opacity(0.5))
                     .cornerRadius(20)
                 }
-                
-                
-                
-                
-            }.navigationBarTitle("Locations")
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "person")
-                    }.padding()
-            )
-                .sheet(isPresented: self.$isVisionPresented) {
-                    VisionViewController()
+            }
+            .sheet(isPresented: self.$isVisionPresented) {
+                VisionViewController()
             }
         }
     }

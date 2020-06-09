@@ -14,6 +14,7 @@
 		CA1C22ED2459FF18000CE6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22EC2459FF18000CE6F9 /* Assets.xcassets */; };
 		CA1C22F02459FF18000CE6F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22EF2459FF18000CE6F9 /* Preview Assets.xcassets */; };
 		CA1C22F32459FF18000CE6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1C22F12459FF18000CE6F9 /* LaunchScreen.storyboard */; };
+		CA60AAB2248FD13600760D5E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA60AAB1248FD13600760D5E /* ProfileView.swift */; };
 		CA871BC924743C06008D124A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA871BC724743C06008D124A /* ErrorView.swift */; };
 		CA871BCC24743E10008D124A /* Extentios.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA871BCB24743E10008D124A /* Extentios.swift */; };
 		CA871BCE24743EA6008D124A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA871BCD24743EA6008D124A /* GoogleService-Info.plist */; };
@@ -50,6 +51,7 @@
 		CA1C22EF2459FF18000CE6F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA1C22F22459FF18000CE6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA1C22F42459FF18000CE6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA60AAB1248FD13600760D5E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CA871BC724743C06008D124A /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		CA871BCB24743E10008D124A /* Extentios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentios.swift; sourceTree = "<group>"; };
 		CA871BCD24743EA6008D124A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -146,10 +148,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CA60AAB3248FD13F00760D5E /* ParentZone */ = {
+			isa = PBXGroup;
+			children = (
+				CA60AAB1248FD13600760D5E /* ProfileView.swift */,
+			);
+			path = ParentZone;
+			sourceTree = "<group>";
+		};
 		CA871BCF24743F50008D124A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CAED2A8F24877D3C00024C9B /* ParentZone */,
+				CA60AAB3248FD13F00760D5E /* ParentZone */,
 				CAED2A8D2487761300024C9B /* SafeZone */,
 				CA871BD024743F65008D124A /* Auth */,
 				CAED2A8324876EFE00024C9B /* Extentios */,
@@ -186,13 +196,6 @@
 				CAED2A8B248775ED00024C9B /* LocationsView.swift */,
 			);
 			path = SafeZone;
-			sourceTree = "<group>";
-		};
-		CAED2A8F24877D3C00024C9B /* ParentZone */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ParentZone;
 			sourceTree = "<group>";
 		};
 		CAED2A9524890E8E00024C9B /* Vision */ = {
@@ -367,6 +370,7 @@
 				CAED2AA924890E8E00024C9B /* MemoContainer.swift in Sources */,
 				CA1C22EB2459FF11000CE6F9 /* ContentView.swift in Sources */,
 				CAED2AA624890E8E00024C9B /* VisionViewController.swift in Sources */,
+				CA60AAB2248FD13600760D5E /* ProfileView.swift in Sources */,
 				CAED2AA524890E8E00024C9B /* VisionObjectRecognitionViewController.swift in Sources */,
 				CAED2AA724890E8E00024C9B /* ObjectDetector.mlmodel in Sources */,
 			);

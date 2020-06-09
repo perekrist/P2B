@@ -11,18 +11,8 @@ import Firebase
 
 struct MainView: View {
     var body: some View {
+        NavigationView {
         VStack {
-            
-//            HStack {
-//                Spacer()
-//
-//                Button(action: {
-//
-//                }) {
-//                    Image(systemName: "person")
-//                }.padding()
-//            }
-            
             TabView {
                 DictionaryView()
                     .tabItem {
@@ -45,6 +35,13 @@ struct MainView: View {
                         Text("Tests")
                 }
             }
+        }
+            .navigationBarItems(trailing:
+                    NavigationLink(destination: ProfileView()) {
+                        Image(systemName: "person")
+                    }.padding()
+            )
+            
         }
     }
     

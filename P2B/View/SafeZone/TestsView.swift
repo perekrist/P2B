@@ -12,7 +12,7 @@ struct TestsView: View {
     @State private var tests: [String] = ["test1", "test2", "test3"]
     
     var body: some View {
-        NavigationView {
+        VStack {
             List(tests, id: \.self) { test in
                 
                 VStack {
@@ -24,14 +24,7 @@ struct TestsView: View {
                 }
                 .padding()
                 
-            }.navigationBarTitle("Tests")
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "person")
-                    }.padding()
-            )
+            }
         }
     }
 }

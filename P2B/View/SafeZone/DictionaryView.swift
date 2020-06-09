@@ -13,18 +13,12 @@ struct DictionaryView: View {
     @State private var words: [String] = ["Banana", "Coffee", "Green", "Blue", "Cat", "Dog", "Banana", "Coffee", "Green", "Blue", "Cat", "Dog"]
     
     var body: some View {
-        NavigationView {
+        VStack {
             List(words, id: \.self) { word in
                 Text(word)
-            }.navigationBarTitle("Dictionary")
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "person")
-                    }.padding()
-            )
+            }
         }
+        
     }
 }
 

@@ -13,7 +13,7 @@ struct GamesView: View {
     @State var isMemoViewPresented = false
     
     var body: some View {
-        NavigationView {
+        VStack {
             List(games, id: \.self) { game in
                 
                 Button(action: {
@@ -31,18 +31,12 @@ struct GamesView: View {
                 }
                 
                 
-            }.navigationBarTitle("Games")
-                .navigationBarItems(trailing:
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "person")
-                    }.padding()
-            )
-                .sheet(isPresented: self.$isMemoViewPresented) {
-                    MemoContainer()
+            }
+            .sheet(isPresented: self.$isMemoViewPresented) {
+                MemoContainer()
             }
         }
+        
     }
     
     func generateRandomColor() -> UIColor {
