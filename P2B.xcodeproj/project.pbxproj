@@ -210,10 +210,10 @@
 		CAED2A9B24890E8E00024C9B /* MemoryCardsGameAR */ = {
 			isa = PBXGroup;
 			children = (
-				CAED2A9C24890E8E00024C9B /* MemoContainer.swift */,
-				CAED2A9D24890E8E00024C9B /* models */,
 				CAED2AA224890E8E00024C9B /* ARMemoViewController.swift */,
+				CAED2A9C24890E8E00024C9B /* MemoContainer.swift */,
 				CAED2AA324890E8E00024C9B /* Memo.storyboard */,
+				CAED2A9D24890E8E00024C9B /* models */,
 			);
 			path = MemoryCardsGameAR;
 			sourceTree = "<group>";

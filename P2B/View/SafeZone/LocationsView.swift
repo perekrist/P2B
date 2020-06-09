@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LocationsView: View {
     
-    @State private var locations: [String] = ["Breakfast", "Bathroom", "Pets", "Clothes", "Colors"]
+    @State private var locations: [String] = ["breakfast", "bathroom", "pets", "clothes", "colors"]
     @State var isVisionPresented = false
     
     var body: some View {
@@ -18,7 +18,7 @@ struct LocationsView: View {
             List(locations, id: \.self) { location in
                 
                 Button(action: {
-                    if location == "Breakfast" {
+                    if location == "breakfast" {
                         self.isVisionPresented.toggle()
                     }
                 }) {
