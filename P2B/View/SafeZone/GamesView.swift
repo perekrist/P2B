@@ -1,15 +1,15 @@
 //
 //  GamesView.swift
-//  P2B
+//  AR-English
 //
-//  Created by Кристина Перегудова on 03.06.2020.
-//  Copyright © 2020 Кристина Перегудова. All rights reserved.
+//  Created by Дарья Перевертайло on 13.06.2020.
+//  Copyright © 2020 Дарья Перевертайло. All rights reserved.
 //
 
 import SwiftUI
 
 struct GamesView: View {
-    @State private var games: [String] = ["Memo", "Memo", "Memo", "Memo"]
+    @State private var games: [String] = ["Memo", "Game2", "Game3", "Game4"]
     @State var isMemoViewPresented = false
     
     var body: some View {
@@ -17,17 +17,22 @@ struct GamesView: View {
             List(games, id: \.self) { game in
                 
                 Button(action: {
-                    self.isMemoViewPresented.toggle()
+                    if game == "Memo" {
+                        self.isMemoViewPresented.toggle()
+                    }
                 }) {
-                    VStack {
-                        Text(game)
-                            .font(.title)
-                        
+                    ZStack {
+                        VStack {
+                            Text(game)
+                                .font(.title)
+                        }
                     }
                     .padding()
                     .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.width / 2 + 50)
                     .background(Color.init(self.generateRandomColor()).opacity(0.5))
+                    .foregroundColor(game == "Memo" ? Color.black : Color.black.opacity(0.3))
                     .cornerRadius(20)
+                    
                 }
                 
                 

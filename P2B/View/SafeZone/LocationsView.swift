@@ -1,16 +1,16 @@
 //
 //  LocationsView.swift
-//  P2B
+//  AR-English
 //
-//  Created by Кристина Перегудова on 03.06.2020.
-//  Copyright © 2020 Кристина Перегудова. All rights reserved.
+//  Created by Дарья Перевертайло on 13.06.2020.
+//  Copyright © 2020 Дарья Перевертайло. All rights reserved.
 //
 
 import SwiftUI
 
 struct LocationsView: View {
     
-    @State private var locations: [String] = ["breakfast", "bathroom", "pets", "clothes", "colors"]
+    @State private var locations: [String] = ["breakfast", "bathroom", "clothes", "pets", "colors"]
     @State var isVisionPresented = false
     
     var body: some View {

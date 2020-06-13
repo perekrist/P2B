@@ -1,14 +1,14 @@
 //
 //  ProfileView.swift
-//  P2B
+//  AR-English
 //
-//  Created by Кристина Перегудова on 09.06.2020.
-//  Copyright © 2020 Кристина Перегудова. All rights reserved.
+//  Created by Дарья Перевертайло on 13.06.2020.
+//  Copyright © 2020 Дарья Перевертайло. All rights reserved.
 //
 
 import SwiftUI
 
-struct ProfileView : View {
+struct ProfileView: View {
     
     @State var index = 0
     

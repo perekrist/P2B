@@ -1,9 +1,9 @@
 //
 //  ErrorView.swift
-//  AR-English
+//  MusicApp
 //
-//  Created by Дарья Перевертайло on 11.06.2020.
-//  Copyright © 2020 Дарья Перевертайло. All rights reserved.
+//  Created by Кристина Перегудова on 16.05.2020.
+//  Copyright © 2020 Кристина Перегудова. All rights reserved.
 //
 
 import SwiftUI
