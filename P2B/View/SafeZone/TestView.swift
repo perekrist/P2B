@@ -1,21 +1,33 @@
 //
-//  TestView.swift
-//  P2B
+//  DictionaryView.swift
+//  AR-English
 //
-//  Created by Кристина Перегудова on 13.06.2020.
-//  Copyright © 2020 Кристина Перегудова. All rights reserved.
+//  Created by Дарья Перевертайло on 16.06.2020.
+//  Copyright © 2020 Дарья Перевертайло. All rights reserved.
 //
 
 import SwiftUI
 
 struct TestView: View {
+    
+    @State var test: Test
+    @State private var answer: Int = 0
+    
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct TestView_Previews: PreviewProvider {
-    static var previews: some View {
-        TestView()
+        VStack {
+            Image(test.image)
+                .resizable()
+                .frame(height: 250)
+                .scaledToFit()
+            
+            Text(test.question)
+                .font(.largeTitle)
+            
+            Picker(selection: $answer, label: EmptyView()) {
+                Text(test.first).tag(0)
+                Text(test.second).tag(1)
+                Text(test.third).tag(2)
+            }
+        }
     }
 }

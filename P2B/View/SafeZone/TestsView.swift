@@ -9,21 +9,15 @@
 import SwiftUI
 
 struct TestsView: View {
-    @State private var tests: [String] = ["test1", "test2", "test3"]
+    @State private var tests: [Test] = [Test(id: 0, difficulty: 2, image: "banana", question: "What is this?", first: "Banana", second: "Orange", third: "Apple", answer: 0),
+                                        Test(id: 0, difficulty: 2, image: "banana", question: "What is this?", first: "Banana", second: "Orange", third: "Apple", answer: 0),
+                                        Test(id: 0, difficulty: 2, image: "banana", question: "What is this?", first: "Banana", second: "Orange", third: "Apple", answer: 0)
+    ]
     
     var body: some View {
         VStack {
-            List(tests, id: \.self) { test in
-                
-                VStack {
-                    Image(test)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: UIScreen.main.bounds.width - 50)
-                    
-                }
-                .padding()
-                
+            List(tests) { test in
+                TestView(test: test)
             }
         }
     }

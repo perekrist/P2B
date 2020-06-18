@@ -10,13 +10,18 @@ import SwiftUI
 
 struct DictionaryView: View {
     
-    @State private var words: [Word] = [Word(id: 0, name: "Banana", translate: "Банан", image: "banana"),
-                                        Word(id: 1, name: "Coffee", translate: "Кофе", image: "coffee"),
-                                        Word(id: 2, name: "Green", translate: "Зеленый", image: "green"),
-                                        Word(id: 3, name: "Blue", translate: "Синий", image: "blue"),
-                                        Word(id: 4, name: "Cat", translate: "Кот", image: "cat"),
-                                        Word(id: 5, name: "Dog", translate: "Собака", image: "dog")
+    @State private var words: [Word] = [Word(id: 0, name: "Banana", translate: "Банан", image: "banana", priority: "new"),
+                                        Word(id: 1, name: "Coffee", translate: "Кофе", image: "coffee", priority: "new"),
+                                        Word(id: 2, name: "Green", translate: "Зеленый", image: "green", priority: "new"),
+                                        Word(id: 3, name: "Blue", translate: "Синий", image: "blue", priority: "done"),
+                                        Word(id: 4, name: "Cat", translate: "Кот", image: "cat", priority: "done"),
+                                        Word(id: 5, name: "Dog", translate: "Собака", image: "dog", priority: "done")
     ]
+    
+    @State private var showWordDescription = false
+    @State private var query: String = ""
+    
+    @State var word: Word = Word(id: 0, name: "Banana", translate: "Банан", image: "banana", priority: "new")
     
     var body: some View {
         VStack {
@@ -41,16 +46,21 @@ struct DictionaryView: View {
                     
                     Spacer()
                     
+                    Text(word.priority)
+                        .foregroundColor(word.priority == "done" ? .green : .black)
+                        .font(.title)
+                    
+                    
                     Image(systemName: "chevron.right")
+                }.onTapGesture {
+                    self.showWordDescription.toggle()
+                    self.word = word
                 }
             }
         }
+        .sheet(isPresented: $showWordDescription) {
+            WordDescriptionView(word: self.$word)
+        }
         
-    }
-}
-
-struct DictionaryView_Previews: PreviewProvider {
-    static var previews: some View {
-        DictionaryView()
     }
 }
