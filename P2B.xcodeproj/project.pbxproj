@@ -44,6 +44,7 @@
 		CAED2AAF24890E8E00024C9B /* Memo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAED2AA324890E8E00024C9B /* Memo.storyboard */; };
 		CAFF60BA249BAD140019E8C2 /* WordDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF60B9249BAD140019E8C2 /* WordDescriptionView.swift */; };
 		CAFF60BC249BB1010019E8C2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF60BB249BB1010019E8C2 /* Test.swift */; };
+		CAFF60BE249F6F7F0019E8C2 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFF60BD249F6F7F0019E8C2 /* StatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		CAED2AA324890E8E00024C9B /* Memo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Memo.storyboard; sourceTree = "<group>"; };
 		CAFF60B9249BAD140019E8C2 /* WordDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDescriptionView.swift; sourceTree = "<group>"; };
 		CAFF60BB249BB1010019E8C2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		CAFF60BD249F6F7F0019E8C2 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				CA60AAB1248FD13600760D5E /* ProfileView.swift */,
+				CAFF60BD249F6F7F0019E8C2 /* StatisticsView.swift */,
 			);
 			path = ParentZone;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				CAED2AAE24890E8E00024C9B /* ARMemoViewController.swift in Sources */,
 				CA871BDA247441F5008D124A /* MainView.swift in Sources */,
 				CAED2A8A248775DD00024C9B /* TestsView.swift in Sources */,
+				CAFF60BE249F6F7F0019E8C2 /* StatisticsView.swift in Sources */,
 				CA60AACF2494BC8100760D5E /* Child.swift in Sources */,
 				CAED2A88248775CE00024C9B /* GamesView.swift in Sources */,
 				CA871BC924743C06008D124A /* ErrorView.swift in Sources */,
