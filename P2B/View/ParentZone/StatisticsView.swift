@@ -17,7 +17,7 @@ struct StatisticsView: View {
             ForEach(days, id: \.self) { i in
                 Bar(words: CGFloat(Int.random(in: 0..<7)), day: i)
             }
-        }.frame(height: 250)
+        }.frame(height: 170)
     }
 }
 
